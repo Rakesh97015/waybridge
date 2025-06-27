@@ -1,0 +1,268 @@
+.each-item-container {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f6f1;
+  min-height: 100vh;
+}
+
+.item-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.item-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.back-btn {
+  padding: 10px 20px;
+  background: #bfa76a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background: #a8945a;
+}
+
+.item-header h1 {
+  color: #2d2212;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.item-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.item-image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-main-image {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.item-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.item-basic-info h2 {
+  color: #2d2212;
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+}
+
+.item-address {
+  color: #6b5e3c;
+  font-size: 1.1rem;
+  margin: 0 0 15px 0;
+}
+
+.item-rating {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.item-rating span {
+  padding: 5px 12px;
+  background: #f3e9d2;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6b5e3c;
+}
+
+.item-gender {
+  color: #6b5e3c;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.item-description h3 {
+  color: #2d2212;
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+}
+
+.item-description p {
+  color: #6b5e3c;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.item-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.book-btn, .call-btn, .directions-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.book-btn {
+  background: #bfa76a;
+  color: white;
+}
+
+.book-btn:hover {
+  background: #a8945a;
+  transform: translateY(-2px);
+}
+
+.call-btn {
+  background: #28a745;
+  color: white;
+}
+
+.call-btn:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+.directions-btn {
+  background: #17a2b8;
+  color: white;
+}
+
+.directions-btn:hover {
+  background: #138496;
+  transform: translateY(-2px);
+}
+
+.item-services h3 {
+  color: #2d2212;
+  margin: 0 0 15px 0;
+  font-size: 1.3rem;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.service-tag {
+  padding: 8px 16px;
+  background: #f3e9d2;
+  color: #6b5e3c;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.no-item {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.no-item p {
+  color: #6b5e3c;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .item-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .item-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .item-main-image {
+    height: 250px;
+  }
+  
+  .item-actions {
+    flex-direction: column;
+  }
+  
+  .book-btn, .call-btn, .directions-btn {
+    width: 100%;
+  }
+  
+  .item-rating {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .item-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .item-header h1 {
+    font-size: 1.1rem;
+  }
+  .item-main-image {
+    height: 180px;
+    max-width: 100%;
+  }
+  .item-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .book-btn, .call-btn, .directions-btn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 14px 0;
+  }
+  .item-rating {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .item-info-section {
+    gap: 15px;
+  }
+  .services-list {
+    gap: 6px;
+  }
+} 
